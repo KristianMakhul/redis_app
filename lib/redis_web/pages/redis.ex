@@ -5,7 +5,7 @@ defmodule RedisWeb.Redis do
   alias Moon.Design.{Table, Button, Modal}
 
   def mount(_params, _session, socket) do
-    {:ok, conn} = Redix.start_link("redis://127.0.0.1:6379")
+    {:ok, conn} = Redix.start_link("redis://127.0.0.1:6380")
 
     values = fetch_keys(conn)
 
@@ -191,7 +191,7 @@ defmodule RedisWeb.Redis do
       {:error, _reason} ->
 
         error_message = "Error checking if key '#{key}' exists."
-        
+
         {:noreply, socket
         |> put_flash(:error, error_message)}
     end

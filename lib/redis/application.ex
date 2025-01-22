@@ -9,7 +9,7 @@ defmodule Redis.Application do
   def start(_type, _args) do
     children = [
       RedisWeb.Telemetry,
-      Redis.Repo,
+      #Redis.Repo,
       {DNSCluster, query: Application.get_env(:redis, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Redis.PubSub},
       # Start the Finch HTTP client for sending emails

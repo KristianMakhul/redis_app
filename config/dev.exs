@@ -1,15 +1,15 @@
 import Config
 
 # Configure your database
-config :redis, Redis.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "redis_dev",
-  port: 5434,
-  stacktrace: true,
-  show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+#config :redis, Redis.Repo,
+#  username: "postgres",
+#  password: "postgres",
+#  hostname: "localhost",
+#  database: "redis_dev",
+#  port: 5434,
+#  stacktrace: true,
+#  show_sensitive_data_on_connection_error: true,
+#  pool_size: 10
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
