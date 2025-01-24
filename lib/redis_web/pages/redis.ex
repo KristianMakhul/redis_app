@@ -40,7 +40,7 @@ defmodule RedisWeb.Redis do
             on_click="open_update_modal"
             value={item.key}
             class="bg-popo hover:bg-zeno"
-          >Update key</Button>
+          >Update value</Button>
         </Column>
       </Table>
     </div>
@@ -50,7 +50,7 @@ defmodule RedisWeb.Redis do
       <Modal.Panel>
         <div class="p-4 border-beerus">
           <h3 class="text-moon-18 text-center text-bulma font-medium border-b-2 pb-4">
-            Create new variablegit init
+            Create new key and value
           </h3>
           <br>
             <.form phx-submit="save">
