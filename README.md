@@ -8,4 +8,6 @@ To start your Phoenix server:
 
 3.```mix deps.get```
 
-4.```mix phx.server```
+4.```sudo docker-compose up -d```
+
+5.```mix phx.server```
