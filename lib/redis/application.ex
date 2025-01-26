@@ -14,6 +14,7 @@ defmodule Redis.Application do
       {Phoenix.PubSub, name: Redis.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: Redis.Finch},
+      {Redix, name: :redix},
       # Start a worker by calling: Redis.Worker.start_link(arg)
       # {Redis.Worker, arg},
       # Start to serve requests, typically the last entry
